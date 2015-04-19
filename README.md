@@ -1,5 +1,5 @@
 # spark-intro
-This is an attempt to list down resources to make it easier to engage with [Spark](https://spark.apache.org/ "Spark Homepage").
+This is an attempt to list down resources to make it easier to engage with [Spark](https://spark.apache.org/ "Spark Homepage"). You can download it from [here](https://spark.apache.org/downloads.html).
 
 You may ask why do I need to learn just another framework for 'Big Data' processing when I know Hadoop? To quote from its [Wikipedia entry](http://en.wikipedia.org/wiki/Apache_Spark) 
 >In contrast to Hadoop's two-stage disk-based MapReduce paradigm, Spark's in-memory primitives provide performance up to 100 times faster for certain applications.
@@ -27,3 +27,5 @@ To work and test directly in an IDE like __PyCharm__, you can either add __pyspa
 To run a program on your local machine you can execute :
 ```/Users/User1/Developer/spark-1.3.0-bin-hadoop2.4/bin/spark-submit wordcount.py```
 
+To run this on a spark-cluster (standalone or EC2), you need to specify the cluster address as the argument below :
+```/Users/User1/Developer/spark-1.3.0-bin-hadoop2.4/bin/spark-submit --master spark://<master-ip>:7077 wordcount.py```
